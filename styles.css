@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bg-color: #191f36; 
+    --text-color: #fff;
+    --main-color: #59b2f4;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 15px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+/* Home section styles */
+.home-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 10%;
+   
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.home p {
+    font-size: 1.6rem;
+}
+
+/* Gallery section styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center; /* Center-align the content within the div */
+    margin: auto; /* Center the div itself horizontally */
+}
+
+.gallery img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Menu section styles */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.textbox {
+    background-color: #f7f7f7; /* Background color of the text box */
+    border: 1px solid #ccc; /* Border of the text box */
+    padding: 20px; /* Padding inside the text box */
+    border-radius: 5px; /* Rounded corners for the text box */
+  }
+  
+  .textbox p {
+    font-size: 16px; /* Font size of the paragraph */
+    line-height: 1.5; /* Line height of the paragraph for better readability */
+  }
+
+.menu li {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 20px; /* Add some spacing between each menu item */
+}
+
+.menu img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Add spacing between the image and text */
+}
+
+.menu h3 {
+    font-size: 1.2rem; /* Adjust the font size of the text */
+}
